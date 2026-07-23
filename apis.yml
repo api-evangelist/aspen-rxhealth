@@ -1,8 +1,26 @@
 aid: aspen-rxhealth
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aspen-rxhealth.png
 name: Aspen RxHealth
-description: 'Aspen RxHealth is a company surfaced as a portfolio company of bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Aspen RxHealth is a healthcare technology company that transforms medication
+  management by connecting healthcare organizations with a nationwide network of licensed
+  clinical pharmacists who deliver remote, patient-facing consultations. Its web-based
+  BeWell platform supports CMS-compliant clinical programs including medication therapy
+  management (MTM), medication adherence, chronic disease management, medication reconciliation,
+  and statin-therapy gap closure, using proprietary matching algorithms to pair pharmacists
+  with patients by language, geography, and clinical condition. Aspen RxHealth was surfaced
+  as a portfolio company of Bessemer Venture Partners; it does not currently publish a
+  public developer portal or API.'
 url: https://raw.githubusercontent.com/api-evangelist/aspen-rxhealth/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Pharmacy
+- Medication Therapy Management
+- Clinical Pharmacists
+- Medication Adherence
+- Digital Health
+- Telehealth
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aspen-rxhealth-domain-security.yml
 - type: Website
   url: https://aspenrxhealth.com/
+- type: About
+  url: https://aspenrxhealth.com/about/
+- type: Support
+  url: https://aspenrxhealth.com/faq/
+- type: SignUp
+  url: https://community.aspenrxhealth.com/register
+- type: Login
+  url: https://grove.aspenrxhealth.com/login/
+- type: PrivacyPolicy
+  url: https://aspenrxhealth.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
